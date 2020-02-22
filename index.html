@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Free Code Camp Survey</title>
+  <link rel="stylesheet" href="./css/reset.css">
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+  <h1>FreeCodeCamp Survey</h1>
+  <div class="container">
+    <h3>Let us know how we can improve freeCodeCamp</h3>
+    <form action="process.php">
+    <!-- Name -->
+    <div>
+      <label for="name">*Name:</label>
+      <input type="text" id="name" name="name" placeholder="Enter your name" required>
+    </div>
+    <!-- Email -->
+    <div>
+      <label for="email">*Email:</label>
+      <input type="email" id="email" name="email" placeholder="Enter your Email" required>
+    </div>
+    <!-- Age -->
+    <div>
+      <label for="age">*Age:</label>
+      <input type="number" name="age" id="age" min="1" max="100" placeholder="Age" required>
+    </div>
+    <!-- Role -->
+    <div>
+    <label for="role">Which option best describes your current role?</label>
+    <select name="role" id="role">
+      <option value="student">Student</option>
+      <option value="dveloper">Developer</option>
+    </select>
+    </div>
+    <!-- Likelihood -->
+    <div>
+      <label for="likelihood">How likely is that you would receommend freeCodeCamp to a friend?</label><br>
+      <input type="radio" name="likelihood" value="definitley" id="likelihood"> Definitley 
+      <input type="radio" name="likelihood" value="maybe" id="likelihood"> Maybe
+      <input type="radio" name="likelihood" value="not sure" id="likelihood"> Not sure
+    </div>
+    <!-- Like the most? -->
+    <div>
+      <label for="favorite">What do you like most in FCC?</label>
+    <select name="favorite" id="favorite">
+      <option value="html">HTML</option>
+      <option value="css">CSS</option>
+      <option value="js">Javascript</option>
+    </select>
+    </div>
+    <!-- Checkbox -->
+    <div>
+      <label for="improvement">What should be improved in the future? (Check all that apply)</label><br>
+      <input type="checkbox" name="improvement" value="front-end Projects" id="improvement"> Front-end Projects
+      <input type="checkbox" name="improvement" value="back-end Projects" id="improvement"> Back-end Projects
+      <input type="checkbox" name="improvement" value="data visualization" id="improvement"> Data Visualization
+    </div>
+    <h3>Addional Comments</h3>
+    <!-- Comments -->
+    <label class="additional-comments" for="comments"></label><br>
+    <textarea name="comments" id="comments" placeholder="Enter any additional comments here"></textarea>
+    <div class="buttons">
+    <!-- Submit Button -->
+    <button type="submit">Submit</button>
+    <div class="divider"></div>
+    <!-- Reset Button -->
+    <button type="reset">Reset</button>
+    </div>
+    </form>
+  </div>
+</body>
+</html>
